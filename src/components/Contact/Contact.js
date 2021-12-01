@@ -5,7 +5,8 @@ import Map from './Map';
 const Contact = () => {
     
     return (
-       <div className="container">
+       <div>
+           <div className="container">
            <div className="row my-5">
                 <div className="col-md-6">
                     <h3>Our Address</h3>
@@ -48,8 +49,9 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <Map/>
     </div>
+    <Map/>
+</div>
     );
 };
 

@@ -8,6 +8,7 @@ import Footer from "./components/Common/Footer/Footer";
 import Faq from "./components/Faq/Faq";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
+import LundryService from "./components/Services/LundryService/LaundryServices";
 
 // export const UserContext = createContext();
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/faq" element={<Faq/>} />
         <Route path="/aboutUs" element={<AboutUs/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/laundryService" element={<LundryService/>} />
       </Routes>
       <Footer/>
        {/* </UserContext.Provider>   */}
