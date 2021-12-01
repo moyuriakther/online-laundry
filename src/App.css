@@ -9,3 +9,16 @@
 .btn-main:hover {
   background: #082d2c;
 }
+.counter-section{
+  background: #53704e;
+  height:150px;
+}
+.footer{
+  background: #53704e;
+}
+@media screen and (max-width: 778px) {
+  .counter-section {
+   height:250px;
+   justify-content:center; 
+  }
+}

@@ -23,7 +23,7 @@ const Navbar = () => {
                    <NavLink className="menu" to="/admin">Admin</NavLink>
                </div>
                <div>
-                   <NavLink className="menu" to="/deals">contact</NavLink>
+                   <NavLink className="menu" to="/contact">contact</NavLink>
                </div>
             </div>
                <div style = {{color:'tomato'}}>

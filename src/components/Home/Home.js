@@ -1,7 +1,10 @@
 import React from 'react';
 import laundryImage from '../../media/lundry.jpeg';
-// import services from '../../fakeData/service.JSON';
+import workImage from '../../media/how it works.png'
 import Service from './Service';
+import WhyChooseUs from './WhyChooseUs';
+import CountUp from 'react-countup';
+import ClientReview from './ClientReview/ClientReview';
 
 const Home = () => {
     const serviceStyle = {
@@ -22,6 +25,33 @@ const Home = () => {
           "category": "Iron Service",
           "img": "https://st2.depositphotos.com/5624298/12418/i/600/depositphotos_124186854-stock-photo-electric-iron-and-shirts.jpg"
         }
+      ]
+      const whyChooses = [
+          {
+              "image":"https://cdn-icons-png.flaticon.com/128/2830/2830175.png",
+              "name": "Free Pickup & Delivery",
+              "description": "Your laundry gets picked up and delivered back to your doorsteps for absolutely free."
+          },
+          {
+              "image":"https://cdn-icons-png.flaticon.com/128/2563/2563863.png",
+              "name": "Quality Assurance",
+              "description":"Best Quality Assurance by the Top-notch Laundry experts of the country."
+          },
+          {
+              "image":"https://cdn-icons.flaticon.com/png/128/3130/premium/3130453.png?token=exp=1637670751~hmac=ef05d0b020c8ccdd44ed4fc61b8b9837",
+              "name":"Affordable Price",
+              "description": "No Additional Cost! You pay just as same as the price set by your selected laundry vendor."
+          },
+         {
+            "image":"https://cdn-icons.flaticon.com/png/128/5828/premium/5828211.png?token=exp=1637678005~hmac=d815544d22ed5c88f187d73d2bc5750a",
+            "name": "Convenience",
+            "description": "With just a tap of a button, your laundry gets done. giving your leisure time to spend with family and friends."
+         },
+         {
+            "image":"https://cdn-icons-png.flaticon.com/128/900/900553.png",
+            "name": "Personalized Experience",
+            "description": "We mostly take care of your chothes.We mostly take care of your chothes.We mostly take care of your chothes."
+         }       
       ]
     return (
         <div>
@@ -47,10 +77,43 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div>
-                
+            <div className="container mt-5 d-flex justify-content-center">
+                <img style={{width:"100%"}} src={workImage}/>
             </div>
-            <h1>This is home</h1>
+            <div className="container mt-5">
+                <div className="row">
+                <h2 className="d-flex justify-content-center">WHY CHOOSE US</h2>
+                   {
+                       whyChooses.map(choose =><WhyChooseUs choose={choose}/>)
+                   }
+                </div>
+            </div>
+            <div className="counter-section mt-5 text-white">
+                <div className="container m-2">
+                    <div style={{height:"150px", fontWeight:"bold"}} className="row container d-flex  align-items-center">    
+                    <div className="col-md-5">
+                        <h3 >Online Laundry Service</h3>
+                    </div>
+                    <div className="col-md-2">
+                            <CountUp start={0} end={200} duration={5}/>
+                            <p>Happy Client</p>
+                    </div>
+                    <div className="col-md-2">
+                            <CountUp start={0} end={200} duration={5}/>
+                            <p>Service</p>
+                    </div>
+                    <div className="col-md-3">
+                            <CountUp start={0} end={100} duration={5}/>
+                            <p>Satisfy Customers</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container mt-5">
+                <h3 className="d-flex justify-content-center mb-5">OUR CUSTOMERS FEEDBACK</h3>
+                <ClientReview/>
+            </div>
+           
         </div>
     );
 };
