@@ -57,15 +57,17 @@ const Home = () => {
         <div>
             <div className="container mt-5">
                 <div className="row">
-                    <div className="col-md-7">
+                    <div className="col-md-6">
                         <img style={{height:"300px", width:"500px", borderRadius: "5px"}} src ={laundryImage}/>
                     </div>
-                    <div className="col-md-5 d-flex align-items-center">
+                    <div className="search-city-area col-md-6 d-flex align-items-center justify-content-center">
                         <div>
-                        <h5>Search Your Location</h5>
-                        <input type="text" placeholder="City"/>
-                        <input type="text" placeholder="Area"/>  <br />
-                        <button style={{ padding:"5px 150px"}} className="btn-main mt-2">Order Now</button>
+                        <h3>Search Your Location</h3>
+                        <form>
+                            <input type="text" placeholder="City"/>
+                            <input type="text" placeholder="Area"/>  <br />
+                            <button style={{ padding:"5px 165px"}} className="btn-main mt-2">Order Now</button>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -73,23 +75,23 @@ const Home = () => {
             <div className="container mt-5">
                 <div className="row">
                     {
-                        services.map(service => <Service service={service}/>)
+                        services.map(service => <Service service={service} key={service.category}/>)
                     }
                 </div>
             </div>
             <div className="container mt-5 d-flex justify-content-center">
                 <img style={{width:"100%"}} src={workImage}/>
             </div>
-            <div className="container mt-5">
+            <div className="container Choose-Us-area mt-5">
                 <div className="row">
-                <h2 className="d-flex justify-content-center">WHY CHOOSE US</h2>
+                <h3 className="d-flex justify-content-center">WHY CHOOSE US</h3>
                    {
-                       whyChooses.map(choose =><WhyChooseUs choose={choose}/>)
+                       whyChooses.map(choose =><WhyChooseUs choose={choose} key={choose.name}/>)
                    }
                 </div>
             </div>
             <div className="counter-section mt-5 text-white">
-                <div className="container m-2">
+                <div className="container m-2 p-2">
                     <div style={{height:"150px", fontWeight:"bold"}} className="row container d-flex  align-items-center">    
                     <div className="col-md-5">
                         <h3 >Online Laundry Service</h3>
@@ -109,7 +111,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mt-5">
+            <div className="container feedback mt-5">
                 <h3 className="d-flex justify-content-center mb-5">OUR CUSTOMERS FEEDBACK</h3>
                 <ClientReview/>
             </div>

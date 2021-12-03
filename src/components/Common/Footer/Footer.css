@@ -1,0 +1,26 @@
+.footer-copyright{
+    font-size:14px;
+    font-weight:700;
+    background-color:lightGray;
+}
+.footer-copyright p{
+    margin-bottom:0;
+    padding: 6px;
+}
+.footer-logo p{
+    font-size:14px;
+    padding-right: 14px;
+    text-align: justify;
+}
+.footer-logo h6{
+    display: inline-block;
+    color: #fff;
+}
+.useful-links .menu{
+    font-size:14px;
+    font-weight:500;
+}
+.footer h6{
+    font-size: 22px;
+    font-weight:500;
+}

@@ -1,11 +1,25 @@
 .topBar{
-    height: 80px;
+    height: 70px;
     margin: 0px;
+    font-size:14px;
+    font-weight:bold;
 }
-.icons{
+.email-phone-address p{
+    margin-right:15px;
+    margin-bottom:0px;
+}
+p{
+    margin:0px;
+    padding:0px;
+    padding-bottom: 0px;
+}
+p > {
+    color: red;
+}
+/* .icons{
     color: red;
     margin: 10px;
 }
 .facebook{
     margin: 10px;
-}
+} */

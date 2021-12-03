@@ -1,6 +1,12 @@
 * {
-  font-family: Myriad Pro Regular;
+  font-family: Roboto,sans-serif;
+  /* font-family: 'Source Serif Pro', serif; */
+  /* font-family: Myriad Pro Regular; */
   /* font-family: 'Myriad Pro Condensed'; */
+}
+.search-city-area h3, .Choose-Us-area h3, .feedback h3, .address h3, .form h3 {
+  font-size:24px;
+  font-weight:600;
 }
 .btn-main {
   /* background-image: linear-gradient(75deg, #f9ab19, #53704e); */
@@ -8,17 +14,17 @@
   font-weight: 600;
   border-radius: 5px;
   color: #ffffff;
-  background: #53704e;
+  background: #c36341;
 }
 .btn-main:hover {
   background: #082d2c;
 }
 .counter-section {
-  background: #53704e;
+  background: #C36241;
   height: 150px;
 }
 .footer {
-  background: #53704e;
+  background-color: #045F5F;
 }
 @media screen and (max-width: 778px) {
   .counter-section {

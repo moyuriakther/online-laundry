@@ -1,5 +1,7 @@
 import React from "react";
-import { FaFacebook, FaYoutube, FaMapMarkerAlt } from "react-icons/fa";
+// import { FaFacebook, FaYoutube, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { MdPhoneEnabled, MdEmail } from "react-icons/md";
+import { IconContext } from 'react-icons';
 import './TopBar.css';
 import { NavLink} from 'react-router-dom';
 import logo from '../../../media/logo.png'
@@ -10,14 +12,15 @@ const TopBar = () => {
         {/* <Link to="/www.facebook.com"><FaFacebook /></Link>
         <a href="www.youtube.com" target="_blank"><FaYoutube /></a>        
         <FaMapMarkerAlt /> */}
-        <NavLink to="/home" className="menu"><img style={{height:"80px"}} src={logo}/></NavLink>
+        <NavLink to="/home" className="menu ml-2"><img style={{height:"80px"}} src={logo}/></NavLink>
       </div>
       <div className="address">
-          <h4>Mirput 1, Dhaka </h4>
+          <p>Mirput 1, Dhaka </p>
       </div>
-      <div className="justify-content-center">
-          <h6>017XXXXXXXX</h6>
-          <h6>najmulcse2@gmail.com</h6>
+      <div className="email-phone-address d-flex justify-content-center align-items-center">
+      <IconContext.Provider value={{color:"#c36341"}}>
+          <p><MdPhoneEnabled/> +88 01700000000</p> <p><MdEmail/> najmulcse2@gmail.com</p>
+      </IconContext.Provider>
       </div>
     </div>
   );

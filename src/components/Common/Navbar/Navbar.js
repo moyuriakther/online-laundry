@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
                <div style = {{color:'tomato'}}>
                    {/* {loggedInUser.issSignedIn ? loggedInUser.name : */}
-                    <NavLink className="menu" to="/login">Login / Signup</NavLink>
+                    <NavLink className="menu" to="/login">Login / Register</NavLink>
                </div>
            
        </div>
