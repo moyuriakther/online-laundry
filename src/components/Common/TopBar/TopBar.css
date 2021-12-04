@@ -16,6 +16,23 @@ p{
 p > {
     color: red;
 }
+.login-register{
+    text-decoration: none;
+}
+.address, .email-phone-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .address, .email-phone-address{
+        display:none;
+    }
+    .login-area {
+        justify-content: end;
+    }
+}
+
 /* .icons{
     color: red;
     margin: 10px;

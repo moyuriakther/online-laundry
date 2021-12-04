@@ -18,7 +18,7 @@
     width: 100%;
     font-size: 1rem;
 }
-.login > button {
+.login > button, .register-btn {
     width: 100%;
     font-size: 1.25rem;
     padding: 0.25rem;

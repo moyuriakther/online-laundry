@@ -17,7 +17,7 @@ const Login = () => {
                    </div>
                     <button className="btn-main login-btn">Login</button> <br />
                     <div>Or</div>
-                    <NavLink to="/register" className="px-1">
+                    <NavLink to="/register" className="px-0">
                         <button className="btn-main register-btn">Register</button>
                     </NavLink>
                     <div>Or</div>

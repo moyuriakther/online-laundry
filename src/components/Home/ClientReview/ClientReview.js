@@ -4,8 +4,7 @@ import './ClientReview.css';
 
 const ClientReview = () => {
     return (
-        <div className="d-flex justify-content-center">
-           
+        <div className="d-flex justify-content-center">           
             <Carousel className="carousel" variant="dark">
       <Carousel.Item>
       <div className="image">
@@ -33,7 +32,7 @@ const ClientReview = () => {
         <Carousel.Caption>
           <div className="carousel-caption">
             <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -49,7 +48,7 @@ const ClientReview = () => {
           <div className="carousel-caption">
             <h5>Third slide label</h5>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
             </p>
           </div>
         </Carousel.Caption>

@@ -5,6 +5,7 @@ import Service from './Service';
 import WhyChooseUs from './WhyChooseUs';
 import CountUp from 'react-countup';
 import ClientReview from './ClientReview/ClientReview';
+import './Home.css';
 
 const Home = () => {
     const serviceStyle = {
@@ -55,23 +56,27 @@ const Home = () => {
       ]
     return (
         <div>
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col-md-6">
-                        <img style={{height:"300px", width:"500px", borderRadius: "5px"}} src ={laundryImage}/>
-                    </div>
-                    <div className="search-city-area col-md-6 d-flex align-items-center justify-content-center">
-                        <div>
-                        <h3>Search Your Location</h3>
-                        <form>
-                            <input type="text" placeholder="City"/>
-                            <input type="text" placeholder="Area"/>  <br />
-                            <button style={{ padding:"5px 165px"}} className="btn-main mt-2">Order Now</button>
-                        </form>
+           <div className="search-location-area py-5" style={{ backgroundImage: `url('https://miro.medium.com/max/750/1*VNCMnzl5b8SsjYjGD_YFKA.jpeg')`}}>
+            <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img style={{height:"300px", width:"100%", borderRadius: "5px"}} src ={laundryImage}/>
+                        </div>
+                        <div className="search-city-area col-md-6 d-flex align-items-center justify-content-center">
+                            <div className="m-2">
+                            <h3 className="text-center">Select Your Location</h3>
+                            <form>
+                                <input type="text" placeholder="Your City"/>
+                                <input type="text" placeholder="Your Area"/>  <br />
+                                <div className="d-flex justify-content-center">
+                                    <button style={{ padding:"5px 16px"}} className="btn-main mt-2">Search</button>
+                                </div>
+                            </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+             </div>
+           </div>
             <div className="container mt-5">
                 <div className="row">
                     {
@@ -82,36 +87,43 @@ const Home = () => {
             <div className="container mt-5 d-flex justify-content-center">
                 <img style={{width:"100%"}} src={workImage}/>
             </div>
-            <div className="container Choose-Us-area mt-5">
-                <div className="row">
+            <div className="Choose-Us-area mt-5">
                 <h3 className="d-flex justify-content-center">WHY CHOOSE US</h3>
-                   {
-                       whyChooses.map(choose =><WhyChooseUs choose={choose} key={choose.name}/>)
-                   }
+                <div className="container">
+                    <div className="row">
+                   
+                    {
+                        whyChooses.map(choose =><WhyChooseUs choose={choose} key={choose.name}/>)
+                    }
+                    </div>
                 </div>
             </div>
-            <div className="counter-section mt-5 text-white">
+            <div className="counter-section mt-5 text-white py-4">
                 <div className="container m-2 p-2">
-                    <div style={{height:"150px", fontWeight:"bold"}} className="row container d-flex  align-items-center">    
-                    <div className="col-md-5">
-                        <h3 >Online Laundry Service</h3>
+                    <div style={{fontWeight:"bold"}} className="row">    
+                    <div className="col-sm-12 col-md-12 col-lg-4 col-xs-12 my-2">
+                        <p className="mt-2 counter-title">Online Laundry Service</p>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
                             <CountUp start={0} end={200} duration={5}/>
                             <p>Happy Client</p>
                     </div>
-                    <div className="col-md-2">
-                            <CountUp start={0} end={200} duration={5}/>
-                            <p>Service</p>
+                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
+                            <CountUp start={0} end={2} duration={5}/>
+                            <p>Years in Business</p>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
                             <CountUp start={0} end={100} duration={5}/>
                             <p>Satisfy Customers</p>
+                    </div>
+                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
+                            <CountUp start={0} end={200} duration={5}/>
+                            <p>Service</p>
                     </div>
                     </div>
                 </div>
             </div>
-            <div className="container feedback mt-5">
+            <div className="container feedback my-5">
                 <h3 className="d-flex justify-content-center mb-5">OUR CUSTOMERS FEEDBACK</h3>
                 <ClientReview/>
             </div>

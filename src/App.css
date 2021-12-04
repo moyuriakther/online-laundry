@@ -21,14 +21,23 @@
 }
 .counter-section {
   background: #C36241;
-  height: 150px;
+  /* height: 150px; */
 }
 .footer {
   background-color: #045F5F;
 }
 @media screen and (max-width: 778px) {
   .counter-section {
-    height: 250px;
+    height: 500px;
     justify-content: center;
+  }
+  .carousel .image{
+    margin-bottom: 250px;
+  }
+  .feedback h3{
+    font-size:18px;
+  }
+  .footer-copyright{
+    /* display: block; */
   }
 }

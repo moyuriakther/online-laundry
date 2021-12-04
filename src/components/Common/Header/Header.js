@@ -1,14 +1,12 @@
 import React from 'react';
-import Nav from '../Navbar/Nav';
-import Navbar from '../Navbar/Navbar';
+import Navigation from '../Navbar/Navigation';
 import TopBar from '../TopBar/TopBar';
 
 const Header = () => {
     return (
-        <div >
+        <div className="header-area">
             <TopBar/>
-            {/* <Nav/> */}
-            <Navbar/>
+            <Navigation/>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Service = (props) => {
   const { category, img } = props.service;
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 mb-3">
       <Card>
         <Card.Body >
           <Card.Title className="d-flex justify-content-center">{category}</Card.Title>
