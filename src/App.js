@@ -16,6 +16,7 @@ import OrderService from "./components/Pages/OrderService/OrderService";
 import Dhanmondi from "./components/Pages/Dhanmondi/Dhanmondi";
 import Mirpur from "./components/Pages/Mirpur/Mirpur";
 import ScrollToTop from "./components/Common/Scroll/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 // export const UserContext = createContext();
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/orderService" element={<OrderService/>} />
         <Route path="/dhanmondi" element={<Dhanmondi/>} />
         <Route path="/mirpur" element={<Mirpur/>} />
+        <Route path="/*" element={<NotFound/>} />
       </Routes>
       <Footer/>
        {/* </UserContext.Provider>   */}
