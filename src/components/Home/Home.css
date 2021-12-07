@@ -23,8 +23,13 @@
     position: relative;
     box-sizing: border-box;
     padding-left: 63.5px;
-    padding-right: 63.5px
+    padding-right: 63.5px;
+    font-size:20px;
+    line-height:1.5;
 }
 .counter-title{
     font-size:24px;
+}
+.counter-section p{
+    margin-top: 5px;
 }

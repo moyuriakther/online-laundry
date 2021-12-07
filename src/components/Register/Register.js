@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './Register.css';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const emailValidator = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const passwordValidator = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
@@ -180,6 +182,8 @@ class Register extends React.Component {
            <NavLink to="/login">
                    <button className="btn-main login-btn">Login</button>
             </NavLink>
+            <button className="btn-main social-google-login"> <span> <FcGoogle/> </span> Continue With Google</button> <br/>
+            <button className="btn-main social-fb-login"><span><FaFacebookSquare/></span>  Continue With Facebook</button>
          </form>
          </div>
        )}

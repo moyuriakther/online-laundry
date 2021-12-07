@@ -20,25 +20,28 @@
 }
 .login > button, .register-btn {
     width: 100%;
-    font-size: 1.25rem;
     padding: 0.25rem;
     margin: 0.5rem 0;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-    font-size:15px;
+    font-size:15px !important;
 }
-.social-fb-login{
-    background-color: #1877f2;
-    color: #fff;
-    font-size:15px;
+.save-password-label{
+    cursor: pointer;
 }
-.social-google-login{
-    background-color: #ffffff;
-    border: 1px solid gray;
-    color: #dc4e41;
-    font-size:15px;
+.save-password-label input{
+    width:10%;
+    cursor: pointer;
 }
-/* .social-login{
-    margin-right: 20px;
-} */
+.save-password-label p{
+    margin-bottom:0px;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.create-new-account{
+    color: #000000;
+    text-decoration: none;
+}

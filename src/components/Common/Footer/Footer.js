@@ -25,18 +25,20 @@ const Footer = () => {
                             <NavLink className="menu" to="/aboutUs">About Us</NavLink> <br/>
                             <NavLink className="menu" to="/faq">FAQ</NavLink>   <br/>
                             <NavLink className="menu" to="/blog">Blog</NavLink> <br />
-                            <NavLink className="menu" to="/contact">contact</NavLink> <br />
+                            <NavLink className="menu" to="/contact">contact</NavLink>
                        
-                            <IconContext.Provider value={{color:"white", size:"1em"}}>
-                                <FaFacebook style={{marginRight:"1em"}}/>
-                                <FaGithub style={{marginRight:"1em"}}/>
-                                <FaLinkedin style={{marginRight:"1em"}}/>
-                                <FaTwitter style={{marginRight:"1em"}}/>
-                                <FaYoutube style={{marginRight:"1em"}}/>
+                            <IconContext.Provider value={{className:"footer-Icons"}}>                           
+                            <ul>
+                                <li><a href="https://web.facebook.com/" target="_blank"><FaFacebook/></a></li>
+                                <li><a href="https://github.com/" target="_blank"> <FaGithub/></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><FaLinkedin/></a></li>
+                                <li><a href="https://twitter.com/" target="_blank"><FaTwitter/></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><FaYoutube/></a></li>
+                            </ul>
                             </IconContext.Provider>
                         </div>
                     </div>
-                    <div className = "col-md-3 col-xl-4 col-sm-12 col-lg-4 d-flex align-items-center">
+                    <div className = "col-md-3 col-xl-4 col-sm-12 col-lg-4 d-flex align-items-center justify-content-center">
                         <div>
                            <img style={{width:"100%"}} src={sslCommerce} alt="sslCommerce"/>
                         </div>

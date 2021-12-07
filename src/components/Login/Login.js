@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Login.css';
-import { FaGoogle, FaFacebookSquare } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     return (
@@ -11,21 +9,15 @@ const Login = () => {
                 <h1>Login</h1>
                     <input type="text" placeholder="Enter Your Email"/> <br />
                     <input type="password" placeholder="Enter Your Password"/> < br />
-                   <div className=""> 
+                   <label className="save-password-label d-flex justify-content-start align-items-center"> 
                         <input type="checkbox" id="remember-password" name="remember-password" value="remember-password"/>
-                        <label for="remember-password">Remember password</label>
-                   </div>
+                        <p className="remember-password">Remember password</p>
+                   </label>
                     <button className="btn-main login-btn">Login</button> <br />
                     <div>Or</div>
                     <NavLink to="/register" className="px-0">
-                        <button className="btn-main register-btn">Register</button>
+                        <p className="create-new-account">Create New Account</p>
                     </NavLink>
-                    <div>Or</div>
-                    {/* <div className="d-flex justify-content-between"> */}
-                    <button className="btn-main social-google-login"> <span> <FcGoogle/> </span> Continue With Google</button>
-                    {/* <div>Or</div> */}
-                    <button className="btn-main social-fb-login"><span><FaFacebookSquare/></span>  Continue With Facebook</button>
-                    {/* </div> */}
             </div>
        </div>
     );

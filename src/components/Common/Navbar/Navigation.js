@@ -64,31 +64,34 @@ const Navigation = () => {
                     </div>
                     <li className="nav-item active">
                         <NavLink className="nav-link" to="/" exact>
-                            {/* <i className="fas fa-tachometer-alt"></i> */}
                              HOME
                         </NavLink>
                     </li>
                     <li className="nav-item active">
+                        <NavLink className="nav-link" to="/orderService" exact>
+                            ORDER NOW
+                        </NavLink>
+                    </li>
+                    <li className="nav-item active">
+                        <NavLink className="nav-link" to="/aboutUs" exact>
+                            ABOUT US
+                        </NavLink>
+                    </li>
+                    <li className="nav-item active">
+                        <NavLink className="nav-link" to="/faq" exact>
+                            FAQ
+                        </NavLink>
+                    </li>
+                    <li className="nav-item active">
+                        <NavLink className="nav-link" to="/blog" exact>
+                            BLOG
+                        </NavLink>
+                    </li>
+                    <li className="nav-item active">
                         <NavLink className="nav-link" to="/contact" exact>
-                            {/* <i className="fas fa-tachometer-alt"></i>  */}
-                            CONTACT
+                            CONTACT US
                         </NavLink>
                     </li>
-                    <li className="nav-item active">
-                        <NavLink className="nav-link" to="/orders" exact>
-                            {/* <i className="fas fa-tachometer-alt"></i>  */}
-                            ORDERS
-                        </NavLink>
-                    </li>
-                    <li className="nav-item active">
-                        <NavLink className="nav-link" to="/admin" exact>
-                            {/* <i className="fas fa-tachometer-alt"></i>  */}
-                            ADMIN
-                        </NavLink>
-                    </li>
-                    {/* <li className="d-flex justify-content-end">
-                        <NavLink className="menu" to="/login">Login / Register</NavLink>
-                    </li> */}
                 </ul>
             </div>            
         </nav>

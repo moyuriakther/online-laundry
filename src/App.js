@@ -12,6 +12,10 @@ import LundryService from "./components/Services/LundryService/LaundryServices";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Blogs from "./components/Blog/Blogs";
+import OrderService from "./components/Pages/OrderService/OrderService";
+import Dhanmondi from "./components/Pages/Dhanmondi/Dhanmondi";
+import Mirpur from "./components/Pages/Mirpur/Mirpur";
+import ScrollToTop from "./components/Common/Scroll/ScrollToTop";
 
 // export const UserContext = createContext();
 function App() {
@@ -19,6 +23,7 @@ function App() {
   return (
     // <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
     <>
+      <ScrollToTop/>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,6 +36,9 @@ function App() {
         <Route path="/laundryService" element={<LundryService/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
+        <Route path="/orderService" element={<OrderService/>} />
+        <Route path="/dhanmondi" element={<Dhanmondi/>} />
+        <Route path="/mirpur" element={<Mirpur/>} />
       </Routes>
       <Footer/>
        {/* </UserContext.Provider>   */}

@@ -30,24 +30,25 @@ const Contact = () => {
            </div>
            <div className="container">
            <div className="row my-5">
-                <div className="col-md-6 address">
+                <div className="col-md-6 col-sm-12 col-xs-12 col-xl-6 col-lg-6 address pl-4 p-4">
                     <h3>Our Address</h3>
                     <div className="mt-5">
                     <IconContext.Provider value={{color:"#c36341", size:"2rem"}}>
                         <p><FaMapMarkerAlt/>  <strong>Address: </strong>Panthapath, Dhaka-1215, Bangladesh</p>                    
-                        <p><MdPhoneEnabled/>  +88 01700000000</p>                   
+                        <p><MdPhoneEnabled/>  +88 017000000</p> 
+                        <p>+88 019000000</p>                  
                         <p><MdEmail/>  najmulcse2@gmail.com</p>
                     </IconContext.Provider>
                     </div>
                 </div>
-                <div className="col-md-6">
-                <div className="d-flex justify-content-center form">
-                    
+                <div className="col-md-6 col-sm-12 col-xs-12 col-xl-6 col-lg-6 p-2">
+                <div className="d-flex justify-content-center form">                    
                     <Form  style={{width:'100%'}}>
                     <h3>Send Your Enquiry</h3>
                         <Form.Group controlId="formGroupName">
-                            <Form.Label style={{color:'white'}}>Name</Form.Label>
+                            {/* <Form.Label> </Form.Label> */}
                             <Form.Control
+                            style={{marginBottom:'5px', marginTop:'5px'}}
                             type="text"
                             placeholder="Enter Name"
                             name="name" 
@@ -55,8 +56,9 @@ const Contact = () => {
                             />
                         </Form.Group>
                         <Form.Group controlId="formGroupEmail">
-                            <Form.Label style={{color:'white'}}>Email Address</Form.Label>
+                            {/* <Form.Label style={{color:'white'}}>Email Address</Form.Label> */}
                             <Form.Control
+                            style={{marginBottom:'5px'}}
                             type="email"
                             placeholder="Email"
                             name="email"
@@ -64,7 +66,7 @@ const Contact = () => {
                             />
                         </Form.Group>
                         <Form.Group controlId="formGroupMessage">
-                            <Form.Label style={{color:'white'}}>Message</Form.Label>
+                            {/* <Form.Label style={{color:'white'}}>Message</Form.Label> */}
                             <Form.Control
                             type="textarea"
                             placeholder="Message"

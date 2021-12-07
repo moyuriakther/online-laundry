@@ -8,39 +8,47 @@
     align-items : center;
     text-align : center;
 }
- input {
-    border-radius: 8px;
+.register input {
+    border-radius: 5px;
     border: 2px solid #dddfe2;
     outline: none;
     color : #1d2129;
     margin: 10px 0px;
     padding: 0.5rem 0.75rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: 15px !important;
 }
-form > input{
-    margin: 10px 0px;
+.register form > input{
+    margin: 8px 0px;
 }
-.register-btn, .login-btn {
+.register-btn, .login-btn, .social-google-login, .social-fb-login{
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 15px!important;
     padding: 0.25rem;
     margin: 0.5rem 0;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
 }
-button {
-    padding: 10px;
-    margin: 5px;
-  }
+.social-fb-login{
+  background-color: #1877f2;
+  color: #fff;
+  font-size:15px;
+  width:100%;
+}
+.social-google-login{
+  background-color: #ffffff;
+  border: 1px solid gray;
+  color: #dc4e41;
+  width: 100%;
+  font-size:15px!important;
+}
 h3 {
     margin: 5px;
     padding: 15px 15px 0px 15px;
     font-weight: 300;
   }
 .errorMsg {
-    /* padding: 5px; */
     margin: 0px;
     font-size: 11px;
     color: red;

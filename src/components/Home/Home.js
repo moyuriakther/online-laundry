@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import laundryImage from '../../media/lundry.jpeg';
 import workImage from '../../media/how it works.png'
 import Service from './Service';
@@ -6,13 +6,18 @@ import WhyChooseUs from './WhyChooseUs';
 import CountUp from 'react-countup';
 import ClientReview from './ClientReview/ClientReview';
 import './Home.css';
+import Subscribe from './Subscribe/Subscribe';
+import SelectionArea from './SelectionArea/SelectionArea';
+import { NavLink } from 'react-router-dom';
+import ScrollArrow from '../Common/Scroll/ScrollArrow';
 
 const Home = () => {
-    const serviceStyle = {
-        display: 'flex',
-        margin: '40px',
-        justifyContent: 'space-between'
-    }
+    const [selected, setSelected] = useState("");
+    // const serviceStyle = {
+    //     display: 'flex',
+    //     margin: '40px',
+    //     justifyContent: 'space-between'
+    // }
     const services = [
         {
           "category": "Laundry Service",
@@ -56,6 +61,7 @@ const Home = () => {
       ]
     return (
         <div>
+            <ScrollArrow/>
            <div className="search-location-area py-5" style={{ backgroundImage: `url('https://miro.medium.com/max/750/1*VNCMnzl5b8SsjYjGD_YFKA.jpeg')`}}>
             <div className="container">
                     <div className="row">
@@ -63,16 +69,21 @@ const Home = () => {
                             <img style={{height:"300px", width:"100%", borderRadius: "5px"}} src ={laundryImage}/>
                         </div>
                         <div className="search-city-area col-md-6 d-flex align-items-center justify-content-center">
-                            <div className="m-2">
-                            <h3 className="text-center">Select Your Location</h3>
-                            <form>
+                            <div className="m-2  text-center">
+                            <h3 className="text-center">Choose Your Orders</h3>
+                            {/* <form>
                                 <input type="text" placeholder="Your City"/>
                                 <input type="text" placeholder="Your Area"/>  <br />
                                 <div className="d-flex justify-content-center">
                                     <button style={{ padding:"5px 16px"}} className="btn-main mt-2">Search</button>
                                 </div>
-                            </form>
-                            </div>
+                            </form> */}
+                           
+                                <NavLink to="/orderService"> <button className="btn btn-primary"> Order Now  </button></NavLink>
+                               
+                             {/* <SelectionArea selected={selected} setSelected={setSelected}/> */}
+                        </div>
+                           
                         </div>
                     </div>
              </div>
@@ -99,27 +110,39 @@ const Home = () => {
                 </div>
             </div>
             <div className="counter-section mt-5 text-white py-4">
-                <div className="container m-2 p-2">
+                <div className="container">
                     <div style={{fontWeight:"bold"}} className="row">    
-                    <div className="col-sm-12 col-md-12 col-lg-4 col-xs-12 my-2">
-                        <p className="mt-2 counter-title">Online Laundry Service</p>
-                    </div>
-                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
-                            <CountUp start={0} end={200} duration={5}/>
-                            <p>Happy Client</p>
-                    </div>
-                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
-                            <CountUp start={0} end={2} duration={5}/>
-                            <p>Years in Business</p>
-                    </div>
-                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
-                            <CountUp start={0} end={100} duration={5}/>
-                            <p>Satisfy Customers</p>
-                    </div>
-                    <div className="col-md-3 col-xs-6 col-lg-2 col-sm-6 my-2">
-                            <CountUp start={0} end={200} duration={5}/>
-                            <p>Service</p>
-                    </div>
+                        <div className="col-sm-12 col-md-12 col-lg-3 col-xs-12 my-2 d-flex align-items-center justify-content-center">
+                            <p className="mt-2 counter-title">Online Laundry</p>
+                        </div>
+                        <div className = "col-lg-9 col-sm-12 col-md-12 col-xs-12 d-flex align-items-center justify-content-center">
+                        <div className="row">
+                            <div className="col-md-3 text-center col-xs-6 col-lg-3 col-sm-6 my-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <CountUp start={0} end={200} duration={5}/>
+                                    <p>Happy Clients</p>
+                                </div>
+                            </div>
+                            <div className="col-md-3 text-center col-xs-6 col-lg-3 col-sm-6 my-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <CountUp start={0} end={2} duration={5}/>
+                                    <p>Years in Business</p>
+                                </div>
+                            </div>
+                            <div className="col-md-3 text-center col-xs-6 col-lg-3 col-sm-6 my-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <CountUp start={0} end={100} duration={5}/>
+                                    <p>Satisfy Customers</p>
+                                </div>
+                            </div>
+                            <div className="col-md-3 text-center col-xs-6 col-lg-3 col-sm-6 my-2 d-flex align-items-center justify-content-center">
+                                <div>
+                                    <CountUp start={0} end={200} duration={5}/>
+                                    <p>Total Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,7 +150,7 @@ const Home = () => {
                 <h3 className="d-flex justify-content-center mb-5">OUR CUSTOMERS FEEDBACK</h3>
                 <ClientReview/>
             </div>
-           
+           <Subscribe/>
         </div>
     );
 };
