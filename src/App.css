@@ -83,6 +83,7 @@
   font-weight: 700;
   line-height: 1.21;
   color: #404040;
+  margin: 0;
 }
 .about-page-paragraph {
   text-align: justify;
@@ -109,9 +110,27 @@
     justify-content: space-between;
   }
 }
-@media (max-width:548px){
-  .small{
+@media (max-width: 548px) {
+  .small {
     display: flex;
     flex-direction: column;
-  } 
+  }
+}
+.privacy-paragraph {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.privacy-title {
+  padding: 10px 0px 52px 0px;
+  font-family: CircularStd, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #404040;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
 }

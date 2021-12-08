@@ -24,8 +24,8 @@ const Footer = () => {
                             <NavLink className="menu" to="/home">Home</NavLink> <br />
                             <NavLink className="menu" to="/aboutUs">About Us</NavLink> <br/>
                             <NavLink className="menu" to="/faq">FAQ</NavLink>   <br/>
-                            <NavLink className="menu" to="/blog">Blog</NavLink> <br />
-                            <NavLink className="menu" to="/contact">contact</NavLink>
+                            <NavLink className="menu" to="/terms">Terms And Conditions</NavLink> <br />
+                            <NavLink className="menu" to="/privacy">Privacy Policy</NavLink>
                        
                             <IconContext.Provider value={{className:"footer-Icons"}}>                           
                             <ul>
