@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import './Navigation.css';
 import { NavLink} from 'react-router-dom';
 import $ from 'jquery';
+import logo from'../../../media/logo.png';
 
 const Navigation = () => {
     const animation = () => {
@@ -41,11 +42,11 @@ const Navigation = () => {
     return (
     <div className="">
         <nav className="navbar navbar-expand-lg navbar-mainbg">
-
-            <NavLink className="navbar-brand navbar-logo" to="/home" exact>
+        {/* <NavLink className="navbar-brand navbar-logo login-register text-black" to="/login">Login / Register</NavLink> */}
+            {/* <NavLink className="navbar-brand navbar-logo" to="/home" exact>
                Online Laundry
-            </NavLink>
-            {/* <NavLink to="/home" className="menu ml-2"><img style={{height:"80px"}} src={logo}/></NavLink> */}
+            </NavLink> */}
+            <NavLink to="/home" className="navbar-brand navbar-logo"><img style={{height:"80px"}} src={logo}/></NavLink>
 
             <button className="navbar-toggler"
                     type="button"

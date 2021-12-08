@@ -16,10 +16,15 @@
 /* p > {
     color: red;
 } */
+.topbar-content, .cart-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .login-register{
     text-decoration: none;
 }
- .email-phone-address, .login-registration{
+ .email-phone-address{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,16 +33,13 @@
     .email-phone-address{
         display:none;
     }
-    .login-registration{
-        display: flex;
-        justify-content: flex-end;
-
+}
+@media (min-width:575px) {
+    .cart-icon {
+        display: block !important;
     }
-    /* .login-area {
-        justify-content: flex-end;
-    }
-    .login-register{
+    .topBar{
         display: flex;
-        justify-content: flex-end;
-    } */
+        justify-content: space-between;
+    }
 }
