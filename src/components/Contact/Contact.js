@@ -6,11 +6,13 @@ import { NavLink } from 'react-router-dom';
 import { MdPhoneEnabled, MdEmail } from "react-icons/md";
 import { IconContext } from 'react-icons';
 import { FaMapMarkerAlt } from "react-icons/fa";
+import ScrollArrow from '../Common/Scroll/ScrollArrow';
 
 const Contact = () => {
     
     return (
        <div>
+            <ScrollArrow/>
            <div className="breadcrumb-area">
                <div className="container">
                    <div className="row">

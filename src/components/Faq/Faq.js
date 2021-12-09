@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FaqContents from "./FaqContents";
 import "./Faq.css";
+import ScrollArrow from "../Common/Scroll/ScrollArrow";
 
 const Faq = () => {
   const [faqs, setfaqs] = useState([
@@ -59,6 +60,7 @@ const Faq = () => {
   console.log(faqs);
   return (
     <div className="container mb-5">
+       <ScrollArrow/>
       <h6 className="mt-5 about-page-subtitle">Home / About Us</h6>
       <h3 className="about-page-title">Looking for answers? You’ll find them here.</h3>
       <div className="faqs">

@@ -1,8 +1,10 @@
 import React from 'react';
+import ScrollArrow from '../Common/Scroll/ScrollArrow';
 
 const AboutUs = () => {
     return (
         <div className="container mb-5 pb-5">
+             <ScrollArrow/>
            <div className="container about-us-page">
             <h6 className="mt-5 about-page-subtitle">Home / About Us</h6>
             <h3 className="about-page-title">We wanted an easy way to get laundry done</h3>

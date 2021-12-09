@@ -7,9 +7,10 @@ import CountUp from 'react-countup';
 import ClientReview from './ClientReview/ClientReview';
 import './Home.css';
 import Subscribe from './Subscribe/Subscribe';
-import SelectionArea from './SelectionArea/SelectionArea';
+// import SelectionArea from './SelectionArea/SelectionArea';
 import { NavLink } from 'react-router-dom';
 import ScrollArrow from '../Common/Scroll/ScrollArrow';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Home = () => {
     const [selected, setSelected] = useState("");
@@ -151,6 +152,12 @@ const Home = () => {
                 <ClientReview/>
             </div>
            <Subscribe/>
+           <div>
+           <MessengerCustomerChat
+                pageId="102566725617011"
+                appId="208066921510636"
+             />,
+           </div>
         </div>
     );
 };

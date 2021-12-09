@@ -1,8 +1,10 @@
 import React from "react";
+import ScrollArrow from "../Common/Scroll/ScrollArrow";
 
 const Privacy = () => {
   return (
     <div className="container my-5">
+       <ScrollArrow/>
       <h6 className="mt-5 about-page-subtitle">Home / Privacy</h6>
       <h3 className="privacy-title">Privacy Policy</h3>
       <p className="privacy-paragraph">
