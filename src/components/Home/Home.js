@@ -45,12 +45,12 @@ const Home = () => {
               "description":"Best Quality Assurance by the Top-notch Laundry experts of the country."
           },
           {
-              "image":"https://cdn-icons.flaticon.com/png/128/3130/premium/3130453.png?token=exp=1637670751~hmac=ef05d0b020c8ccdd44ed4fc61b8b9837",
+              "image":"https://cdn-icons.flaticon.com/png/128/3417/premium/3417915.png?token=exp=1639052052~hmac=993d6aac228519ff1e40e3db18a29df8",
               "name":"Affordable Price",
               "description": "No Additional Cost! You pay just as same as the price set by your selected laundry vendor."
           },
          {
-            "image":"https://cdn-icons.flaticon.com/png/128/5828/premium/5828211.png?token=exp=1637678005~hmac=d815544d22ed5c88f187d73d2bc5750a",
+            "image":"https://cdn-icons.flaticon.com/png/128/5670/premium/5670897.png?token=exp=1639052129~hmac=b49353641d38948b080db8744e2803e6",
             "name": "Convenience",
             "description": "With just a tap of a button, your laundry gets done. giving your leisure time to spend with family and friends."
          },
@@ -72,17 +72,7 @@ const Home = () => {
                         <div className="search-city-area col-md-6 d-flex align-items-center justify-content-center">
                             <div className="m-2  text-center">
                             <h3 className="text-center">Choose Your Orders</h3>
-                            {/* <form>
-                                <input type="text" placeholder="Your City"/>
-                                <input type="text" placeholder="Your Area"/>  <br />
-                                <div className="d-flex justify-content-center">
-                                    <button style={{ padding:"5px 16px"}} className="btn-main mt-2">Search</button>
-                                </div>
-                            </form> */}
-                           
                                 <NavLink to="/orderService"> <button className="btn btn-primary"> Order Now  </button></NavLink>
-                               
-                             {/* <SelectionArea selected={selected} setSelected={setSelected}/> */}
                         </div>
                            
                         </div>
@@ -96,8 +86,8 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div className="container mt-5 d-flex justify-content-center">
-                <img style={{width:"100%"}} src={workImage}/>
+            <div className="mt-5 d-flex justify-content-center">
+                <img style={{width:"100%", height:"auto"}} src={workImage}/>
             </div>
             <div className="Choose-Us-area mt-5">
                 <h3 className="d-flex justify-content-center">WHY CHOOSE US</h3>
@@ -156,7 +146,7 @@ const Home = () => {
            <MessengerCustomerChat
                 pageId="102566725617011"
                 appId="208066921510636"
-             />,
+             />
            </div>
         </div>
     );

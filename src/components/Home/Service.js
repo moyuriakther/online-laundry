@@ -11,9 +11,9 @@ const Service = (props) => {
         <Card.Body >
           <Card.Title className="d-flex justify-content-center">{category}</Card.Title>
           <Card.Img variant="top" style={{ height: "200px", width: "100px auto", margin: "5px"}} src={img} /> <br/>
-          <NavLink to="/laundryService">
+          {/* <NavLink to="/laundryService">
             <button style={{padding:"5px 30px", marginLeft:"100px"}} className="btn-main mt-2">Details</button>
-          </NavLink>
+          </NavLink> */}
         </Card.Body>
       </Card>
     </div>

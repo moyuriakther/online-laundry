@@ -7,7 +7,7 @@ const Privacy = () => {
        <ScrollArrow/>
       <h6 className="mt-5 about-page-subtitle">Home / Privacy</h6>
       <h3 className="privacy-title">Privacy Policy</h3>
-      <p className="privacy-paragraph">
+      <p className="privacy-paragraph" style={{fontFamily:"Archivo,sans-serif", color: "#717171"}}>
         This Privacy Policy describes your privacy rights concerning our use,
         storage, collection, sharing, and protection of your personal
         information. It refers to the Online Laundry website, and all related

@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
 
-
 const Blogs = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-      fetch('https://mocki.io/v1/a5cfc209-134e-4f7c-ae57-4e81d1215920')
-      .then(res => res.json())
-      .then(data => setData(data))
-    }, [])
-    console.log(data)
+    const [blogsInfo, setBlogsInfo] = useState()
+    // useEffect(() => {
+    //   fetch('https://mocki.io/v1/cd1ef9ae-8288-40bf-b3fa-694a32f3232c')
+    //   .then(res => res.json())
+    //   .then(data => setBlogsInfo(data))
+    // }, [])
+    console.log(blogsInfo)
     return (
-        <div>
+        <div className="container my-5">
+          <h2 className="privacy-title">Blog</h2>
+          <div className="row">
             {
-                data.map(data =><Blog data={data} key={data.name}/>)
+              blogsInfo.map(blogInfo =><Blog blogInfo={blogInfo} />)
             }
+          </div>
         </div>
     );
 };
